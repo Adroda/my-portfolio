@@ -6,7 +6,48 @@ const Projects = () => {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full- mb-20"></div>
+        <div className="flex flex-col w-full- mb-20">
+          <CodeIcon className="mx-auto inline-block w-10 mb-4" />
+          <h1 className="sm:text-4x1 text-3x1 font-medium title-font mb-4 text-white">
+            Apps I've Built
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Richter: Die monster. You don't belong in this world! Dracula: It
+            was not by my hand that I am once again given flesh. I was called
+            here by humans who wish to pay me tribute. Richter: Tribute!?! You
+            steal men's souls and make them your slaves! Dracula: Perhaps the
+            same could be said of all religions... Richter: Your words are as
+            empty as your soul! Mankind ill needs a savior such as you! Dracula:
+            What is a man? (throws his wine glass to the floor) A miserable
+            little pile of secrets. But enough talk... Have at you!
+          </p>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {projects.map((project) => (
+            <a
+              href={project.link}
+              key={project.image}
+              className="sm:w-1/2 w-100 p-4"
+            >
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={project.image}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                    {project.subtitle}
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+                  </h1>
+                  <p className="leading-relaxed">{project.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
