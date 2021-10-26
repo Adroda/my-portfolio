@@ -1,4 +1,5 @@
 import fotito from "./assets/fotito.png";
+import Agustinita from "./assets/Agustinita.jpg";
 
 export const projects = [
   {
@@ -32,5 +33,34 @@ export const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: fotito,
     link: "https://pythonbootcamp.com",
+  },
+];
+
+export const skills = ["C++", "React"];
+
+export const testimonials = [
+  {
+    quote: "escucha mejor musica que yo",
+    image: Agustinita,
+    name: "Agustina Chaer",
+    company: "Roostrap",
+  },
+  {
+    quote: "escucha mejor musica que yo",
+    image: Agustinita,
+    name: "Agustina Chaer",
+    company: "Roostrap",
+  },
+  {
+    quote: "escucha mejor musica que yo",
+    image: Agustinita,
+    name: "Agustina Chaer",
+    company: "Roostrap",
+  },
+  {
+    quote: "escucha mejor musica que yo",
+    image: Agustinita,
+    name: "Agustina Chaer",
+    company: "Roostrap",
   },
 ];
